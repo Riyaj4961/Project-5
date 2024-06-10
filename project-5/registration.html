@@ -1,0 +1,116 @@
+<html>
+    <head>
+               <title>Registration</title>  
+               <script>
+                function validation()
+                 {
+                if (isEmpty(document.getElementById('uname').value.trim())) {
+                alert('First name is required!');
+                return false;
+                }
+                if (isEmpty(document.getElementById('rnumber').value.trim())) {
+                alert('Roll number is required!');
+                return false;
+                }
+                if (isEmpty(document.getElementById('email').value.trim())) {
+                alert('Email is required!');
+                return false;
+                }
+                if (isEmpty(document.getElementById('birthdate').value.trim())) {
+                alert('Date of birth is required!');
+                return false;
+                }
+                
+                if(isEmpty(document.getElementById('datejoining').value.trim())) {
+                alert('Date of joining date is required!');
+                return false;
+                }
+                
+                validateForm()
+
+
+                
+                if (isEmpty(document.getElementById('Username').value.trim())) {
+                alert('Username is required!');
+                return false;}
+
+                if (isEmpty(document.getElementById('password').value.trim())) {
+                alert('password is required!');
+                return false;}
+
+                if (isEmpty(document.getElementById('cpassword').value.trim())) {
+                alert('confirm password is required!');
+                return false;}
+
+                
+
+               
+                 return true;
+                }
+            
+                function isEmpty(str) { return (str.length == 0 || !str.trim()); }
+                function validateForm() {
+      const radioButtons = document.getElementsByName('Gender');
+      let checkedButton = false;
+
+      // Check if any radio button is checked
+      for (let i = 0; i < radioButtons.length; i++) {
+        if (radioButtons[i].checked) {
+          checkedButton = true;
+          break;
+        }
+      }
+      // If no radio button is checked
+      if (!checkedButton) {
+        alert("Please select a gender.");
+        return false;
+      }
+      return true;
+    }
+        
+            
+                </script>
+                                  
+    </head>
+    <body>
+      <video autoplay muted loop>
+        <source src="vid1.mp4" type="video/mp4">This browser doesnot support video tag
+    </video>
+        <link rel="stylesheet" href="css1.css">
+        <form action="loginpage.html" onsubmit="return validation()">
+            <div class="he"><h1>WELCOME TO MY WEBSITE!</h1></div>
+            <div class="head">
+                <nav>
+                    <a href="Home.html">Home</a>
+                    <a href="loginpage.html">Login</a>
+                    <a href="registration.html">Register</a>
+                    <a href="contactUs.html">ContactUs</a>
+                </nav></div> 
+      <center><h1> Registration form</h1></center><div>
+       <center><div class="container">
+       Name<br><input type="text" id="uname" name="uname" placeholder="Name" autofocus><br><br>
+        roll number<br><input type="text" id="rnumber" name="rnumber" placeholder="roll number"><br><br>
+        email id<br><input type="email" id="email" name="email" placeholder="email id"><br><br>
+        Date of birth:<input type="date" id="birthdate" name="birthdate"><br><br>
+        Date of joining:<input type="date" id="datejoining" name="datejoining"><br><br>
+        Gender     :<input type="radio" id="Gender" name="Gender" value="M">Male <input type="radio" name="Gender" value="F">Female<br><br>
+        course     :<select>
+            <option>Java</option>
+            <option>C</option>
+            <option>Python</option>
+        </select><br><br>
+        Material:<br>
+        <input type="checkbox" name="Material">Java
+        <input type="checkbox" name="Material">C
+        <input type="checkbox" name="Material">Python<br><br>
+    
+        address    :<textarea name="address" cols="23" placeholder="address(optional)"></textarea><br><br>
+        Username   :<input type="text" id="Username" name="Username" placeholder="Username"><br><br>
+        Create password   :<input type="password" id="password" name="password" placeholder="Enter password"><br><br>
+        confirm password:<input type="password" id="cpassword" name="cpassword" placeholder="Confirm password"><br><br></div>
+        <input type="submit" name="Rigister">
+        <button type="reset">Reset</button>
+        </div></center>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+body{ background-color: rgb(178, 237, 241);
+    text-align: center;color:bold}
+    nav a{color:rgb(250, 253, 246);text-decoration:none;}
+    a{color:rgb(250, 253, 246);text-decoration:none;}
+    a:hover{color: black;}
+    nav a{margin-right: 20px;
+    }
+    .head{background-color: rgba(16, 197, 64, 0.5); padding: 5px;}
+    .he {background-color: rgb(70, 153, 70); padding: 10px;color:white;}
+    .container{
+        background-color: rgba(157, 241, 227, 0.5);
+        width: 200;
+        padding: 30px 50px;
+    }
+    input,textarea {border: 5px black;}
+    @media screen and (min-width: 767px)  {
+        .container {
+           background-color: rgba(182, 182, 233,0.5);
+        }
+                }
+
+    /* tablets , iPads (portait and landscape )----------  */
+     
+ @media screen and (min-width: 768px) and (max-width: 1024px)  {
+       
+    .container {
+           background-color: rgba(233, 187, 187,0.5);
+        }
+    }
+
+
+  /* Low resolution Desktops and laptops ----------  */
+     
+  @media screen and (min-width: 1024px)  {
+    .container {
+           background-color: rgba(170, 223, 168,0.5);
+        }
+    }
+
+  /* High  resolution Desktops and laptops ----------  */
+     
+  @media screen and (min-width: 1280px)  {
+    .container {
+          background-color: rgba(165, 236, 232, 0.5);
+        }
+    }
+    video{
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -1;
+    }
